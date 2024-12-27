@@ -1,0 +1,115 @@
+:root {
+    --primary-bg: #000;
+    --primary-text: #fff;
+    --accent: #999;
+}
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease;
+}
+
+nav {
+    width: 100%;
+    background-color: var(--primary-bg);
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--accent);
+}
+
+nav a {
+    margin: 0 20px;
+    color: var(--primary-text);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.portfolio-description {
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.video-block {
+    width: 80%;
+    max-width: 1000px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 800px;
+}
+
+.photo-gallery {
+    width: 80%;
+    max-width: 1000px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-container img {
+    width: 100%;
+    border: 1px solid var(--accent);
+    transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+.game-download {
+    width: 80%;
+    max-width: 1000px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.download-button {
+    padding: 15px 30px;
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #333;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid var(--accent);
+    margin-top: 50px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
